@@ -1,16 +1,119 @@
-# React + Vite
+# React Docker Auth App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React.js frontend application with:
 
-Currently, two official plugins are available:
+* Login Page
+* Registration Page
+* Admin Dashboard
+* Fake API Authentication
+* Protected Routes
+* Modular Folder Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project runs completely using **Docker**.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+* React (Vite)
+* Docker
+* React Router
+* Context API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Prerequisites
+
+Make sure you have installed:
+
+* Docker
+* Docker Compose
+
+Check installation:
+
+```
+docker --version
+docker compose version
+```
+
+---
+
+## 🐳 Run Project Locally using Docker
+
+### Step 1: Clone Repository
+
+```
+git clone https://github.com/your-username/react-docker-auth-app.git
+cd react-docker-auth-app
+```
+
+---
+
+### Step 2: Build & Run Container
+
+```
+docker compose up --build
+```
+
+---
+
+### Step 3: Access Application
+
+Open browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔐 Login Credentials (Fake API)
+
+```
+Email: admin@test.com
+Password: 123456
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+ ├── app/
+ ├── modules/
+ │   ├── auth/
+ │   └── admin/
+ ├── components/
+ ├── layouts/
+```
+
+---
+
+## 🛑 Stop Container
+
+```
+docker compose down
+```
+
+---
+
+## 🔄 Rebuild Container (After Changes)
+
+```
+docker compose up --build
+```
+
+---
+
+## 📌 Notes
+
+* Fake API is used for authentication
+* Replace authService with real backend API later
+* Admin dashboard is under admin module
+
+---
+
+## 🧑‍💻 Author
+
+Shabin T.C
